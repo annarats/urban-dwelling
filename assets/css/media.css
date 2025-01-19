@@ -1,0 +1,241 @@
+@media (max-width: 1599.99px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .search-product__title {
+        font-size: 40px;
+    }
+
+    .header__layout {
+        position: relative;
+    }
+
+    .header__search-open{
+        display: block;
+    }
+
+    .header__search {
+        display: none;
+    }
+    .header__search.active {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        margin-top: 10px;
+    }
+    .header__search-input{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+@media (max-width: 1199.98px) {    
+    .container {
+        max-width: 960px;
+    } 
+}
+
+@media (max-width: 991.98px) { 
+    .container {
+        max-width: 720px;
+    }
+    .search-product-card__button_wrapper{
+        padding: 20px 21px;
+    }
+    .header__nav-item a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .container {
+        max-width: 100%;
+    }
+
+    .header__layout {
+        grid-template-columns: 2fr;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__right-controls {
+        display: none;
+    }
+
+    .header__burger{
+        display: grid;
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    .bar-info{
+        display: none;
+    }
+
+    .burger-menu.active {
+        display: block;
+        transform: translateX(0);
+        opacity: 1;
+        background: var(--main-color);
+        color: var(--second-color);
+        height: 100%;
+        width: 80%;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0s linear 0s;
+        z-index: 1000;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .search-product__layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .search-product__title{
+        font-size: 32px;
+    }
+
+    .footer__extra-link{
+        margin-bottom: 50px;
+    }
+
+    .footer__payment-methods{
+        margin: 30px 0 30px 0;
+    }
+
+    .footer__layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__logo-container {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+    
+    .footer__address {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .footer__contacts {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .footer__services {
+        grid-column: 3;
+        grid-row: 2 / 4;
+    }
+    
+    .footer__extra {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .footer__extra-ul{
+        text-align: left;
+    }
+    .footer__payment-methods {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+    
+    .footer__disclaimer {
+        grid-column: 2 / 4;
+        grid-row: 4;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .container {
+        max-width: 100%;
+    }
+
+    .search-product__title{
+        font-size: 24px;
+    }
+
+    .search-product-card__title{
+        font-size: 16px;
+    }
+
+    .search-product-price span{
+        font-size: 16px;
+    }
+
+    .search-product-card__badge_sale{
+        font-size: 14px;
+    }
+
+    .search-product-card__badge_sale{
+        font-size: 14px;
+    }
+
+    .search-product-price__fixed,
+    .search-product-price__new,
+    .search-product-price__old{
+        font-size: 16px;
+    }
+
+    .footer__extra-link{
+        margin-bottom: 0;
+    }
+
+    .footer__payment-methods{
+        margin: 50px 0 10px 0;
+        justify-self: start;
+    }
+
+    .footer__layout{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__logo-container {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+    
+    .footer__address {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    
+    .footer__contacts {
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+    
+    .footer__services {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+    
+    .footer__extra {
+        grid-column: 1;
+        grid-row: 5 / 6;
+    }
+    
+    .footer__payment-methods {
+        grid-column: 1;
+        grid-row: 6 / 7;
+    }
+    
+    .footer__disclaimer {
+        grid-column: 1;
+        grid-row: 7 / 8;
+    }
+}
