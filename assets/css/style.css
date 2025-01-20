@@ -286,22 +286,30 @@ h1 {
     transform: none;
     opacity: 1;
 }
-
+.burger-menu__toggle  .burger-menu__icon:nth-child(1),
+.burger-menu__toggle  .burger-menu__icon:nth-child(2),
+.burger-menu__toggle  .burger-menu__icon:nth-child(3) {
+  position: static;
+}
 .burger-menu__toggle.active .burger-menu__icon:nth-child(1) {
-    transform: rotate(45deg);
     position: absolute;
+    transform: rotate(45deg);
     top: 26px;
+    right: 0;
 }
 
 .burger-menu__toggle.active .burger-menu__icon:nth-child(2) {
+
     opacity: 0;
 }
 
 .burger-menu__toggle.active .burger-menu__icon:nth-child(3) {
-    transform: rotate(-45deg);
     position: absolute;
+    transform: rotate(-45deg);
     top: 26px;
+    right: 0;
 }
+
 .burger-menu {
     transform: translateX(-100%);
     opacity: 0;
