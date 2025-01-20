@@ -267,6 +267,26 @@ h1 {
 .header__burger{
     display: none;
 }
+
+.burger-menu__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu__icon {
+    width: 23px;
+    height: 1.6px;
+    background-color: var(--main-color);
+    display: block;
+    margin: 3.4px auto;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: static;
+    top: auto;
+    transform: none;
+    opacity: 1;
+}
+
 .burger-menu__toggle.active .burger-menu__icon:nth-child(1) {
     transform: rotate(45deg);
     position: absolute;
@@ -282,22 +302,6 @@ h1 {
     position: absolute;
     top: 26px;
 }
-.burger-menu__toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.burger-menu__icon {
-    width: 23px;
-    height: 1.6px;
-    background-color: var(--main-color);
-    display: block;
-    margin: 3.4px auto;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
-    position: static;
-}
-
 .burger-menu {
     transform: translateX(-100%);
     opacity: 0;
