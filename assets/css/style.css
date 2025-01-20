@@ -295,6 +295,7 @@ h1 {
     display: block;
     margin: 3.4px auto;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+    position: static;
 }
 
 .burger-menu {
