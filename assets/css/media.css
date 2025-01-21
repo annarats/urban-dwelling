@@ -168,7 +168,13 @@
     .search-product__title{
         font-size: 24px;
     }
-
+    .search-product-card__badge_sale{
+        width: 100px;
+        margin: 0 auto!important;
+    }
+    .search-product-card__button{
+        font-size: 12px;
+    }
     .search-product-card__title{
         font-size: 16px;
     }
